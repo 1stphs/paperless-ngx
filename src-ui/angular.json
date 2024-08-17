@@ -62,7 +62,7 @@
             "localize": true,
             "assets": [
               "src/favicon.ico",
-              "src/apple-touch-icon.png",
+              "src/apple-touch-icon.svg",
               "src/assets",
               "src/manifest.webmanifest",
               {
@@ -146,7 +146,7 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/apple-touch-icon.png",
+              "src/apple-touch-icon.svg",
               "src/assets",
               "src/manifest.webmanifest"
             ],
