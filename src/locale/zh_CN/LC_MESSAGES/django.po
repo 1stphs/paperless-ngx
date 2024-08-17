@@ -257,55 +257,55 @@ msgstr "日志"
 
 #: documents/models.py:401
 msgid "Table"
-msgstr ""
+msgstr "表格"
 
 #: documents/models.py:402
 msgid "Small Cards"
-msgstr ""
+msgstr "小卡片"
 
 #: documents/models.py:403
 msgid "Large Cards"
-msgstr ""
+msgstr "大卡片"
 
 #: documents/models.py:406
 msgid "Title"
-msgstr ""
+msgstr "标题"
 
 #: documents/models.py:407
 msgid "Created"
-msgstr ""
+msgstr "已创建"
 
 #: documents/models.py:408
 msgid "Added"
-msgstr ""
+msgstr "已添加"
 
 #: documents/models.py:409
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #: documents/models.py:410
 msgid "Correspondent"
-msgstr ""
+msgstr "通讯者"
 
 #: documents/models.py:411
 msgid "Document Type"
-msgstr ""
+msgstr "文档类型"
 
 #: documents/models.py:412
 msgid "Storage Path"
-msgstr ""
+msgstr "存储路径"
 
 #: documents/models.py:413
 msgid "Note"
-msgstr ""
+msgstr "备注"
 
 #: documents/models.py:414
 msgid "Owner"
-msgstr ""
+msgstr "所有者"
 
 #: documents/models.py:415
 msgid "Shared"
-msgstr ""
+msgstr "已分享"
 
 #: documents/models.py:416
 msgid "ASN"
@@ -329,15 +329,15 @@ msgstr "反向排序"
 
 #: documents/models.py:437
 msgid "View page size"
-msgstr ""
+msgstr "视图分页数量"
 
 #: documents/models.py:445
 msgid "View display mode"
-msgstr ""
+msgstr "视图显示模式"
 
 #: documents/models.py:452
 msgid "Document display fields"
-msgstr ""
+msgstr "显示字段"
 
 #: documents/models.py:459 documents/models.py:516
 msgid "saved view"
@@ -501,19 +501,19 @@ msgstr "由我共享"
 
 #: documents/models.py:506
 msgid "has custom fields"
-msgstr ""
+msgstr "有自定义字段"
 
 #: documents/models.py:507
 msgid "has custom field in"
-msgstr ""
+msgstr "有自定义字段包含于"
 
 #: documents/models.py:508
 msgid "does not have custom field in"
-msgstr ""
+msgstr "没有自定义字段包含于"
 
 #: documents/models.py:509
 msgid "does not have custom field"
-msgstr ""
+msgstr "没有自定义字段"
 
 #: documents/models.py:519
 msgid "rule type"
@@ -959,7 +959,7 @@ msgstr "感谢您使用 %(site_name)s!\n"
 
 #: documents/templates/account/login.html:5
 msgid "Paperless-ngx sign in"
-msgstr "Paperless-ngx 登录"
+msgstr "ScanWise 登录"
 
 #: documents/templates/account/login.html:10
 msgid "Please sign in."
@@ -996,7 +996,7 @@ msgstr "或者通过以下方式登录"
 
 #: documents/templates/account/password_reset.html:5
 msgid "Paperless-ngx reset password request"
-msgstr "Paperless-ngx密码重置请求"
+msgstr "ScanWise密码重置请求"
 
 #: documents/templates/account/password_reset.html:9
 msgid "Enter your email address below, and we'll email instructions for setting a new one."
@@ -1016,7 +1016,7 @@ msgstr "向为发送说明"
 
 #: documents/templates/account/password_reset_done.html:5
 msgid "Paperless-ngx reset password sent"
-msgstr "Paperless-ngx密码重置发送"
+msgstr "ScanWise密码重置发送"
 
 #: documents/templates/account/password_reset_done.html:9
 msgid "Check your inbox."
@@ -1028,7 +1028,7 @@ msgstr "我们已经通过电子邮件向您发送设置密码的说明。你应
 
 #: documents/templates/account/password_reset_from_key.html:5
 msgid "Paperless-ngx reset password confirmation"
-msgstr "Paperless-ngx密码重置确认"
+msgstr "ScanWise密码重置确认"
 
 #: documents/templates/account/password_reset_from_key.html:9
 msgid "Set a new password."
@@ -1052,11 +1052,11 @@ msgstr "修改密码"
 
 #: documents/templates/account/password_reset_from_key_done.html:5
 msgid "Paperless-ngx reset password complete"
-msgstr "Paperless-ngx密码重置完成"
+msgstr "ScanWise密码重置完成"
 
 #: documents/templates/account/password_reset_from_key_done.html:9
 msgid "Password reset complete."
-msgstr "秘密重置完成"
+msgstr "密码重置完成"
 
 #: documents/templates/account/password_reset_from_key_done.html:14
 #, python-format
@@ -1065,7 +1065,7 @@ msgstr "你的新密码已经被设置，你现在可以<a href=\"%(login_url)s\
 
 #: documents/templates/account/signup.html:5
 msgid "Paperless-ngx sign up"
-msgstr "Paperless-ngx 注册"
+msgstr "ScanWise注册"
 
 #: documents/templates/account/signup.html:10
 #, python-format
@@ -1088,7 +1088,7 @@ msgstr "注册"
 
 #: documents/templates/index.html:61
 msgid "Paperless-ngx is loading..."
-msgstr "Paperless-ngx 正在加载..."
+msgstr "ScanWise正在加载..."
 
 #: documents/templates/index.html:62
 msgid "Still here?! Hmm, something might be wrong."
@@ -1109,7 +1109,7 @@ msgstr "分享链接已失效！"
 #: documents/templates/socialaccount/authentication_error.html:5
 #: documents/templates/socialaccount/login.html:5
 msgid "Paperless-ngx social account sign in"
-msgstr "Paperless-ngx 社交媒体账户登录"
+msgstr "ScanWise 社交媒体账户登录"
 
 #: documents/templates/socialaccount/authentication_error.html:10
 #, python-format
@@ -1155,7 +1155,7 @@ msgstr "无法解析 URI {value}"
 
 #: paperless/apps.py:10
 msgid "Paperless"
-msgstr "无纸版"
+msgstr "ScanWise"
 
 #: paperless/models.py:26
 msgid "pdf"
@@ -1299,7 +1299,7 @@ msgstr "应用程序图标"
 
 #: paperless/models.py:188
 msgid "paperless application settings"
-msgstr "无纸应用设置"
+msgstr "应用设置"
 
 #: paperless/settings.py:682
 msgid "English (US)"
@@ -1431,7 +1431,7 @@ msgstr "简体中文"
 
 #: paperless/urls.py:242
 msgid "Paperless-ngx administration"
-msgstr "Paperless-ngx 管理"
+msgstr "ScanWise 管理"
 
 #: paperless_mail/admin.py:39
 msgid "Authentication"
@@ -1447,7 +1447,7 @@ msgstr "过滤器"
 
 #: paperless_mail/admin.py:61
 msgid "Paperless will only process mails that match ALL of the filters given below."
-msgstr "Paperless-ngx 只会处理符合以下所有过滤规则的邮件。"
+msgstr "ScanWise 只会处理符合以下所有过滤规则的邮件。"
 
 #: paperless_mail/admin.py:78
 msgid "Actions"
@@ -1463,11 +1463,11 @@ msgstr "元数据"
 
 #: paperless_mail/admin.py:92
 msgid "Assign metadata to documents consumed from this rule automatically. If you do not assign tags, types or correspondents here, paperless will still process all matching rules that you have defined."
-msgstr "将元数据自动指定到被此规则所处理的文档。 如果您不在这里指定标签、类型或联系人，Paperless-ngx 仍将处理您已定义的所有匹配规则。"
+msgstr "将元数据自动指定到被此规则所处理的文档。 如果您不在这里指定标签、类型或联系人,ScanWise仍将处理您已定义的所有匹配规则。"
 
 #: paperless_mail/apps.py:11
 msgid "Paperless mail"
-msgstr "Paperless-ngx 邮件"
+msgstr "ScanWise 邮件"
 
 #: paperless_mail/models.py:10
 msgid "mail account"

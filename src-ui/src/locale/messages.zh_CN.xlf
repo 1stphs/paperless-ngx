@@ -279,7 +279,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">94</context>
         </context-group>
-        <target state="translated">文档 <x id="PH" equiv-text="status.filename"/> 被添加至 Paperless-ngx.</target>
+        <target state="translated">文档 <x id="PH" equiv-text="status.filename"/> 被添加至 ScanWise.</target>
       </trans-unit>
       <trans-unit id="1931214133925051574" datatype="html">
         <source>Open document</source>
@@ -319,7 +319,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">124</context>
         </context-group>
-        <target state="translated">文件 <x id="PH" equiv-text="status.filename"/> 正在被 Paperless-ngx 处理中.</target>
+        <target state="translated">文件 <x id="PH" equiv-text="status.filename"/> 正在被 ScanWise 处理中.</target>
       </trans-unit>
       <trans-unit id="6570363013146073520" datatype="html">
         <source>Dashboard</source>
@@ -447,7 +447,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">175</context>
         </context-group>
-        <target state="translated">拖放文档到此处开始上传或将其放置在消费文件夹中。 您也可以在网页所有其他页面上随时拖放文档。一旦您这样做，Paperless ngx将开始培训它的机器学习算法。</target>
+        <target state="translated">拖放文档到此处开始上传或将其放置在消费文件夹中。 您也可以在网页所有其他页面上随时拖放文档。一旦您这样做，ScanWise将开始培训它的机器学习算法。</target>
       </trans-unit>
       <trans-unit id="7495498057594070122" datatype="html">
         <source>The documents list shows all of your documents and allows for filtering as well as bulk-editing. There are three different view styles: list, small cards and large cards. A list of documents currently opened for editing is shown in the sidebar.</source>
@@ -543,7 +543,7 @@
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">242</context>
         </context-group>
-        <target state="translated">最后，代表社区支持项目的每个贡献者，感谢您使用无纸版！</target>
+        <target state="translated">最后，代表社区支持项目的每个贡献者，感谢您使用ScanWise！</target>
       </trans-unit>
       <trans-unit id="9063918187161876141" datatype="html">
         <source>Application Configuration</source>
@@ -559,7 +559,7 @@
           <context context-type="sourcefile">src/app/components/admin/config/config.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
-        <target state="translated">适用于 &lt;strong&gt;的全局应用程序配置选项。此安装的 Paperless-ngx 的每个&lt;/strong&gt; 用户。 也可以使用环境变量或配置文件来设置选项，但此处的值总是优先。</target>
+        <target state="translated">适用于 &lt;strong&gt;的全局应用程序配置选项。此安装的 ScanWise的每个&lt;/strong&gt; 用户。 也可以使用环境变量或配置文件来设置选项，但此处的值总是优先。</target>
       </trans-unit>
       <trans-unit id="7991430199894172363" datatype="html">
         <source>Read the documentation about this setting</source>
@@ -2839,7 +2839,7 @@
           <context context-type="sourcefile">src/app/components/app-frame/app-frame.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
-        <target state="translated">by Paperless-ngx</target>
+        <target state="translated">by ScanWise</target>
       </trans-unit>
       <trans-unit id="2448391510242468907" datatype="html">
         <source>Logged in as <x id="INTERPOLATION" equiv-text="{{this.settingsService.displayName}}"/></source>
@@ -3091,7 +3091,7 @@
           <context context-type="sourcefile">src/app/components/app-frame/app-frame.component.html</context>
           <context context-type="linenumber">303</context>
         </context-group>
-        <target state="translated">Paperless-ngx 可以自动检查更新</target>
+        <target state="translated">ScanWise 可以自动检查更新</target>
       </trans-unit>
       <trans-unit id="894819944961861800" datatype="html">
         <source> How does this work? </source>
@@ -5801,7 +5801,7 @@
           <context context-type="sourcefile">src/app/components/common/system-status-dialog/system-status-dialog.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
-        <target state="needs-translation">Paperless-ngx Version</target>
+        <target state="needs-translation">ScanWise版本</target>
       </trans-unit>
       <trans-unit id="6269705781013540301" datatype="html">
         <source>Install Type</source>
@@ -5809,7 +5809,7 @@
           <context context-type="sourcefile">src/app/components/common/system-status-dialog/system-status-dialog.component.html</context>
           <context context-type="linenumber">24</context>
         </context-group>
-        <target state="needs-translation">Install Type</target>
+        <target state="needs-translation">安装类型</target>
       </trans-unit>
       <trans-unit id="7962174670320694437" datatype="html">
         <source>Server OS</source>
@@ -5817,7 +5817,7 @@
           <context context-type="sourcefile">src/app/components/common/system-status-dialog/system-status-dialog.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
-        <target state="needs-translation">Server OS</target>
+        <target state="needs-translation">服务器操作系统</target>
       </trans-unit>
       <trans-unit id="2903495470702110128" datatype="html">
         <source>Media Storage</source>
@@ -6220,7 +6220,7 @@
           <context context-type="sourcefile">src/app/components/dashboard/widgets/welcome-widget/welcome-widget.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target state="needs-translation">Paperless-ngx is running!</target>
+        <target state="needs-translation">ScanWise正在运行!</target>
       </trans-unit>
       <trans-unit id="3326049540711826572" datatype="html">
         <source>You&apos;re ready to start uploading documents! Explore the various features of this web app on your own, or start a quick tour using the button below.</source>
