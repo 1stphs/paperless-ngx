@@ -206,7 +206,7 @@ class IndexView(TemplateView):
             f"frontend/{self.get_frontend_language()}/manifest.webmanifest"
         )
         context["apple_touch_icon"] = (
-            f"frontend/{self.get_frontend_language()}/apple-touch-icon.png"
+            f"frontend/{self.get_frontend_language()}/apple-touch-icon.svg"
         )
         return context
 
