@@ -329,7 +329,7 @@ msgstr "反向排序"
 
 #: documents/models.py:437
 msgid "View page size"
-msgstr "视图分页数量"
+msgstr "视图里页面尺寸"
 
 #: documents/models.py:445
 msgid "View display mode"
