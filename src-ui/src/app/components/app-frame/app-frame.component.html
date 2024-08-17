@@ -8,14 +8,13 @@
     [ngClass]="{ 'slim': slimSidebarEnabled, 'col-auto col-md-3 col-lg-2 col-xxxl-1' : !slimSidebarEnabled, 'py-3' : !customAppTitle?.length || slimSidebarEnabled, 'py-2': customAppTitle?.length }"
     routerLink="/dashboard"
     tourAnchor="tour.intro">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.43 238.91" width="1em" height="1.5em" fill="currentColor">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.43 88.91" width="1em" height="1.5em" fill="currentColor">
       <path d="M98.376 93.829L56.803 1.369C56.465.637 55.272.244 54.485.417c-.78.172-1.739.869-1.739 1.67l-.248 89.92c0 2.374 1.794 3.871 4.167 3.871h40.158c.58 0 1.118-.11 1.436-.6.324-.497.358-.918.117-1.45zM44.777.417a4.265 4.265 0 0 0-.587-.042c-.648 0-1.38.373-1.663.994L.651 93.815c-.241.524-.227.96.083 1.449.31.49.828.607 1.408.607h39.233c2.374 0 5.182-1.56 5.182-3.926V2.086c0-.807-1-1.497-1.78-1.67zm-4.803 88.872H9.414l30.553-65.971v65.97z"></path>
     </svg>
     <div class="ms-2 ms-md-3 d-inline-block" [class.d-md-none]="slimSidebarEnabled">
       @if (customAppTitle?.length) {
         <div class="d-flex flex-column align-items-start">
           <span class="title">{{customAppTitle}}</span>
-          <span class="byline text-uppercase font-monospace" i18n>by ScanWise</span>
         </div>
       } @else {
         ScanWise
@@ -49,11 +48,6 @@
         </a>
         <a ngbDropdownItem class="nav-link d-flex" href="accounts/logout/" (click)="onLogout()">
           <i-bs class="me-2" name="door-open"></i-bs><ng-container i18n>Logout</ng-container>
-        </a>
-        <div class="dropdown-divider"></div>
-        <a ngbDropdownItem class="nav-link" target="_blank" rel="noopener noreferrer"
-          href="https://docs.paperless-ngx.com">
-          <i-bs class="me-2" name="question-circle"></i-bs><ng-container i18n>Documentation</ng-container>
         </a>
       </div>
     </li>
@@ -272,67 +266,6 @@
                 </a>
               </li>
             }
-            <li class="nav-item mt-2" tourAnchor="tour.outro">
-              <a class="px-3 py-2 text-muted small d-flex align-items-center flex-wrap text-decoration-none"
-                target="_blank" rel="noopener noreferrer" href="https://docs.paperless-ngx.com" ngbPopover="Documentation"
-                i18n-ngbPopover [disablePopover]="!slimSidebarEnabled" placement="end" container="body"
-                triggers="mouseenter:mouseleave" popoverClass="popover-slim">
-                <i-bs class="d-flex" name="question-circle"></i-bs><span class="ms-1">&nbsp;<ng-container i18n>Documentation</ng-container></span>
-              </a>
-            </li>
-            <li class="nav-item" [class.visually-hidden]="slimSidebarEnabled">
-              <div class="px-3 py-0 text-muted small d-flex align-items-center flex-wrap">
-                <div class="me-3">
-                  <a class="text-muted text-decoration-none" target="_blank" rel="noopener noreferrer"
-                    href="https://github.com/paperless-ngx/paperless-ngx" ngbPopover="GitHub" i18n-ngbPopover
-                    [disablePopover]="!slimSidebarEnabled" placement="end" container="body"
-                    triggers="mouseenter:mouseleave" popoverClass="popover-slim">
-                    {{ versionString }}
-                  </a>
-                </div>
-                @if (!settingsService.updateCheckingIsSet || appRemoteVersion) {
-                  <div class="version-check">
-                    <ng-template #updateAvailablePopContent>
-                      <span class="small">ScanWise{{ appRemoteVersion.version }} <ng-container i18n>is
-                          available.</ng-container><br /><ng-container i18n>Click to view.</ng-container></span>
-                    </ng-template>
-                    <ng-template #updateCheckingNotEnabledPopContent>
-                      <p class="small mb-2">
-                        <ng-container i18n>ScanWise can automatically check for updates</ng-container>
-                      </p>
-                      <div class="btn-group btn-group-xs flex-fill w-100">
-                        <button class="btn btn-outline-primary" (click)="setUpdateChecking(true)">Enable</button>
-                        <button class="btn btn-outline-secondary" (click)="setUpdateChecking(false)">Disable</button>
-                      </div>
-                      <p class="small mb-0 mt-2">
-                        <a class="small text-decoration-none fst-italic" routerLink="/settings" fragment="update-checking" i18n>
-                          How does this work?
-                        </a>
-                      </p>
-                    </ng-template>
-                    @if (settingsService.updateCheckingIsSet) {
-                      @if (appRemoteVersion.update_available) {
-                        <a class="small text-decoration-none" target="_blank" rel="noopener noreferrer"
-                          href="https://github.com/paperless-ngx/paperless-ngx/releases"
-                          [ngbPopover]="updateAvailablePopContent" popoverClass="shadow" triggers="mouseenter:mouseleave"
-                          container="body">
-                          <i-bs width="1.2em" height="1.2em" name="info-circle"></i-bs>
-                          @if (appRemoteVersion?.update_available) {
-                            &nbsp;<ng-container i18n>Update available</ng-container>
-                          }
-                        </a>
-                      }
-                    } @else {
-                      <a class="small text-decoration-none" routerLink="/settings" fragment="update-checking"
-                        [ngbPopover]="updateCheckingNotEnabledPopContent" popoverClass="shadow" triggers="mouseenter"
-                        container="body">
-                        <i-bs width="1.2em" height="1.2em" name="info-circle"></i-bs>
-                      </a>
-                    }
-                  </div>
-                }
-              </div>
-            </li>
           </ul>
         </div>
       </div>
