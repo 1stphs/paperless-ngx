@@ -134,7 +134,7 @@ export class ConfigComponent
   }
 
   getDocsUrl(key: string) {
-    return `https://docs.paperless-ngx.com/configuration/#${key}`
+    return `https://docs.scanwise.cn/configuration/#${key}`
   }
 
   public saveConfig() {
