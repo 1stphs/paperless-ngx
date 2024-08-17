@@ -40,15 +40,18 @@ services:
   db:
     image: docker.io/library/postgres:16
     restart: unless-stopped
+    ports:
+      - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - /var/www/scanwise/pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: paperless
       POSTGRES_USER: paperless
       POSTGRES_PASSWORD: paperless
 
   webserver:
-    image: ghcr.io/paperless-ngx/paperless-ngx:latest
+    build:
+      context: .
     restart: unless-stopped
     depends_on:
       - db
@@ -56,12 +59,12 @@ services:
       - gotenberg
       - tika
     ports:
-      - "8000:8000"
+      - "8010:8000"
     volumes:
-      - data:/usr/src/paperless/data
-      - media:/usr/src/paperless/media
-      - ./export:/usr/src/paperless/export
-      - ./consume:/usr/src/paperless/consume
+      - /var/www/scanwise/data:/usr/src/paperless/data
+      - /var/www/scanwise/media:/usr/src/paperless/media
+      - /var/www/scanwise/export:/usr/src/paperless/export
+      - /var/www/scanwise/consume:/usr/src/paperless/consume
     env_file: docker-compose.env
     environment:
       PAPERLESS_REDIS: redis://broker:6379
@@ -88,5 +91,7 @@ services:
 volumes:
   data:
   media:
+  export:
+  consume:
   pgdata:
   redisdata:
