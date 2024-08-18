@@ -4,8 +4,8 @@ $color-mode-type: data;
 
 @mixin paperless-green {
   // base color e.g. #17541f = hsl(128, 57%, 21%)
-  --pngx-primary: 204, 70%;
-  --pngx-primary-lightness: 38%;
+  --pngx-primary: 227, 52%;
+  --pngx-primary-lightness: 12%;
 }
 
 :root {
@@ -64,7 +64,8 @@ $form-check-radio-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='htt
 
 // Dark mode
 @mixin paperless-green-dark-mode {
-  --pngx-primary-lightness: 31%;
+  --pngx-primary-lightness: 81%;
+  --pngx-primary: 0 0%;
   --bs-primary: hsl(var(--pngx-primary),var(--pngx-primary-lightness));
 }
 
@@ -74,10 +75,10 @@ $form-check-radio-checked-bg-image-dark: url("data:image/svg+xml,<svg xmlns='htt
   --bs-secondary-color: #6c757d;
   --bs-danger: #b71631;
   --bs-danger-rgb: 183, 22, 49;
-  --bs-body-bg: #161618;
-  --bs-body-bg-rgb: 22, 22, 24;
-  --bs-light: #1c1c1f;
-  --bs-light-rgb: 28, 28, 31;
+  --bs-body-bg: #232e43;
+  --bs-body-bg-rgb: 35, 46, 67;
+  --bs-light: #3e4a60;
+  --bs-light-rgb: 62, 74, 96;
   --bs-border-color: #47494f;
   --pngx-bg-alt2: #232323;
   --pngx-bg-darker: #101216;
