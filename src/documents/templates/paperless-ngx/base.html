@@ -16,7 +16,7 @@
         <link href="{% static 'base.css' %}" rel="stylesheet">
     </head>
 
-    <body class="text-center">
+    <body class="text-center" style="background-image: url({% static 'watermark3.jpg' %})>
         <div class="position-absolute top-50 start-50 translate-middle">
             <form class="form-accounts" id="form-account" method="post">
                 {% csrf_token %}
@@ -25,9 +25,6 @@
                 {% else %}
                     {% if APP_LOGO %}
                         <img src="{{APP_LOGO}}" width="300" class="logo mb-1" />
-                        <div class="d-flex flex-column align-items-end mb-4">
-                            <span class="byline text-uppercase font-monospace">by ScanWise</span>
-                        </div>
                     {% else %}
                         <h1 class="font-weight-normal text-primary mb-1 d-flex justify-content-center align-items-start">
                             {% include "paperless-ngx/snippets/svg_leaf.html" with extra_attrs="width='30' class='mt-2'" %}
